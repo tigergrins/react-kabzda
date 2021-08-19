@@ -1,14 +1,11 @@
 import React, {useState} from 'react';
 
-type RatingPropsType = {
-}
-
-export function UncontrolledRating(props: RatingPropsType) {
+export function UncontrolledRating() {
     let [value, setValue] = useState(0)
 
     return (
         <div>
-            <h2>UncontrolledRating</h2>
+            {/*<h2>UncontrolledRating</h2>*/}
             <Star value={1} selected={value > 0} setValue={setValue}/>
             <Star value={2} selected={value > 1} setValue={setValue}/>
             <Star value={3} selected={value > 2} setValue={setValue}/>

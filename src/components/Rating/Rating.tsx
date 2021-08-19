@@ -28,5 +28,5 @@ type StarPropsType = {
 function Star(props: StarPropsType) {
     const onClickHandler = () => props.setRatingValue(props.value)
 
-    return <span onClick={onClickHandler}>{(props.selected) ? <b>star</b> : 'star'}</span>
+    return <span onClick={onClickHandler}>{(props.selected) ? <b>star </b> : 'star '}</span>
 }
